@@ -17,23 +17,18 @@ CardMaker.prototype.setFrontMessage = function(string){
 
 
 
-var ValentineCard = Object.create(CardMaker.prototype);
-ValentineCard.setFrontMessage("Happy Valentines!");
-output.innerHTML += ValentineCard.makeInsideMessage(ValentineCard.greetingMessage);
-console.log(ValentineCard.greetingMessage);
+var ValentineCard = Object.create(CardMaker);
+ValentineCard.prototype.setFrontMessage("<h2 class='card'>Happy Valentines!</h2>");
+output.innerHTML += ValentineCard.prototype.makeInsideMessage(ValentineCard.prototype.greetingMessage);
 
-var ChristmasCard = Object.create(CardMaker.prototype);
-ChristmasCard.setFrontMessage("Merry Christmas!");
-output.innerHTML += ChristmasCard.makeInsideMessage(ChristmasCard.greetingMessage);
-console.log(ChristmasCard.greetingMessage);
+var ChristmasCard = Object.create(CardMaker);
+ChristmasCard.prototype.setFrontMessage("<h2 class='card'>Merry Christmas!</h2>");
+output.innerHTML += ChristmasCard.prototype.makeInsideMessage(ChristmasCard.prototype.greetingMessage);
 
-var HannukahCard = Object.create(CardMaker.prototype);
-HannukahCard.setFrontMessage("Happy Hannukah!");
-output.innerHTML += HannukahCard.makeInsideMessage(HannukahCard.greetingMessage);
-console.log(HannukahCard.greetingMessage);
+var HannukahCard = Object.create(CardMaker);
+HannukahCard.prototype.setFrontMessage("<h2 class='card'>Happy Hannukah!</h2>");
+output.innerHTML += HannukahCard.prototype.makeInsideMessage(HannukahCard.prototype.greetingMessage);
 
-var BirthdayCard = Object.create(CardMaker.prototype);
-BirthdayCard.setFrontMessage("Happy Birthday!");
-output.innerHTML += BirthdayCard.makeInsideMessage(BirthdayCard.greetingMessage);
-console.log(BirthdayCard.greetingMessage);
-
+var BirthdayCard = Object.create(CardMaker);
+BirthdayCard.prototype.setFrontMessage("<h2 class='card'>Happy Birthday!</h2>");
+output.innerHTML += BirthdayCard.prototype.makeInsideMessage(BirthdayCard.prototype.greetingMessage);

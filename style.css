@@ -1,0 +1,7 @@
+.card {
+    border: 1px red dashed;
+    text-align: center;
+    height: 3em;
+    text-decoration: underline;
+    background-image: url("img/confetti.png");
+}
